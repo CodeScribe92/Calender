@@ -1,0 +1,116 @@
+body {
+    margin: 0px;
+}
+
+a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(128, 83, 226);
+    width: 100vw;
+    height: 100vh;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 20px;
+    color: rgb(251, 0, 197);
+}
+
+.header button {
+    width: 70px;
+    background-color: rgb(95, 42, 145);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 3px;
+    color: rgb(251 0, 197);
+}
+
+.header button:hover {
+    cursor: pointer;
+}
+
+.header button:active {
+    transform: translateY(1px);
+}
+
+.content-wrapper {
+    border: 0px;
+    width: 80%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 30px repeat(6, 1fr);
+    justify-items: center;
+}
+
+.content-wrapper .day-of-week {
+    border: 1px solid black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: magenta;
+}
+
+
+.content-wrapper .calender-box {
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 25px 1fr;
+    grid-template-rows: 25px 1fr;
+    border-radius: 5px;
+
+}
+
+.content-wrapper .calender-box .date {
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(206, 132, 22)
+}
+
+.content-wrapper .calender-box textarea {
+    width: 100%;
+    height: 100%;
+    resize: none;
+    grid-row: 2;
+    grid-column: 1/-1;
+}
+
+.content-wrapper .overflow, 
+.content-wrapper .overflow .date, 
+.content-wrapper .overflow textarea {
+    color: rgb(206, 132, 22);
+    border-color: rgb(0, 0, 0);
+}
+
+.footer {
+    display: flex;
+    align-items:flex-end;
+    justify-content: flex-end;
+    width: 100%;
+    color: magenta;
+}
+
+.footer h3 {
+    height:-60%;
+}
